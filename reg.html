@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             background: linear-gradient(to right, #1A1A2E, #16213E);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(to right, #0F3460, #533483);
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-size: 22px;
+            color:white;
+        }
+
+        .form-container {
+            background: white;
+            margin-top: 30px;
+            padding: 35px;
+            padding-right: 45px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            transition: 0.3s ease-in-out;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #6a0dad;
+            box-shadow: 0 0 5px rgba(106, 13, 173, 0.4);
+        }
+
+        .gender-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .gender-group input {
+            width: auto;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2d4373;
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Vignan's IIT">
+        <h1>Vignan's Institute of Information Technology</h1>
+    </header>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <label>First Name:</label>
+            <input type="text" required>
+
+            <label>Last Name:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Password:</label>
+            <input type="password" required>
+
+            <label>Phone No:</label>
+            <input type="tel" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" required>
+
+            <label>Gender:</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" required> Male</label>
+                <label><input type="radio" name="gender" required> Female</label>
+            </div>
+
+            <label>Hobbies:</label>
+            <input type="text">
+
+            <label>Qualification:</label>
+            <select>
+                <option value="">Select</option>
+                <option>10th</option>
+                <option>12th</option>
+                <option>Graduate</option>
+                <option>Post-Graduate</option>
+            </select>
+
+            <label>File Upload:</label>
+            <input type="file">
+
+            <label>Address:</label>
+            <input type="text">
+
+            <label>City:</label>
+            <input type="text">
+
+            <label>State:</label>
+            <input type="text">
+
+            <label>Country:</label>
+            <input type="text">
+
+            <label>Zip Code:</label>
+            <input type="text">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
